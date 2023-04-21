@@ -1,9 +1,12 @@
 FROM python:slim
 
-
 WORKDIR /app
 
 COPY requirements.txt .
 
 RUN python3 -m venv .venv
-RUN .venv/bin/pip install -e ./flask
+RUN .venv/bin/pip install -r requirements.txt
+
+COPY ./server/server.env .env
+
+CMD [".venv/bin/gunicorn", "--bind", "0.0.0.0:8000", "flaskr:Flask"
