@@ -17,9 +17,13 @@ To set this app:
 Technologies Used
 
 Docker - https://www.docker.com/
+
 Flask - https://palletsprojects.com/p/flask/
+
 HTML - https://html.com/
+
 Python3 - https://www.python.org/
+
 AWS - https://aws.amazon.com/
 
 Background
