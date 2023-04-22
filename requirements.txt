@@ -1,5 +1,4 @@
 flask
 gunicorn
-redis
 python-dotenv
 
