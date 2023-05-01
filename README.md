@@ -6,13 +6,12 @@ It is a basic web blog created to be packaged and installed on other computers.
 
 Setup
 
-To set this app:
-  git clone
-  python -m venv venv
-  . venv/bin/activate
-  pip install .  # install your application
-  pip install gunicorn
-  gunicorn -w 4 'flaskr:Flask()'
+To set this app up:
+  git clone  
+  python3 -m venv .venv  
+  source .venv/bin/activate  
+  pip install -r requirementes.txt  # install your application  
+  waitress-serve --port=80  --call 'flaskr:create_app’  
   
 Technologies Used
 
